@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Politique de Confidentialité – YAM ENERGY</title>
+  <meta name="description" content="Politique de confidentialité et protection des données personnelles (RGPD) de YAM ENERGY." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.yamenergy.fr/politique-confidentialite.html" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .legal-hero {
+      background: linear-gradient(135deg, #1B5E20 0%, #2E7D32 60%, #43A047 100%);
+      padding: 140px 0 80px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .legal-hero::before {
+      content: '';
+      position: absolute;
+      top: -100px; right: -100px;
+      width: 500px; height: 500px;
+      background: radial-gradient(ellipse, rgba(255,255,255,0.08) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .legal-hero-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(255,255,255,0.15);
+      color: rgba(255,255,255,0.9);
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 6px 16px;
+      border-radius: 100px;
+      margin-bottom: 20px;
+    }
+    .legal-hero h1 {
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 900;
+      color: #fff;
+      letter-spacing: -0.03em;
+      margin-bottom: 16px;
+      line-height: 1.1;
+    }
+    .legal-hero p {
+      font-size: 1rem;
+      color: rgba(255,255,255,0.75);
+      max-width: 520px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+    .breadcrumb {
+      padding: 20px 0;
+      border-bottom: 1px solid var(--gray-border);
+      background: var(--white);
+    }
+    .breadcrumb-inner {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.82rem;
+      color: var(--gray);
+    }
+    .breadcrumb-inner a { color: var(--green); font-weight: 500; transition: var(--transition); }
+    .breadcrumb-inner a:hover { text-decoration: underline; }
+    .breadcrumb-sep { color: var(--gray-border); }
+
+    .legal-content { padding: 80px 0 100px; background: var(--white); }
+    .legal-grid {
+      display: grid;
+      grid-template-columns: 260px 1fr;
+      gap: 60px;
+      align-items: start;
+    }
+    .legal-nav {
+      position: sticky;
+      top: 100px;
+      background: #F8FAF8;
+      border: 1.5px solid var(--gray-border);
+      border-radius: var(--radius-lg);
+      padding: 28px 24px;
+    }
+    .legal-nav-title {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--gray);
+      margin-bottom: 16px;
+    }
+    .legal-nav a {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.85rem;
+      color: var(--text-light);
+      padding: 9px 12px;
+      border-radius: var(--radius-sm);
+      transition: var(--transition);
+      font-weight: 500;
+      margin-bottom: 2px;
+    }
+    .legal-nav a:hover, .legal-nav a.active { color: var(--green); background: var(--green-xlight); }
+    .legal-nav a::before {
+      content: '';
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: var(--gray-border);
+      flex-shrink: 0;
+      transition: var(--transition);
+    }
+    .legal-nav a:hover::before, .legal-nav a.active::before { background: var(--green); }
+
+    .legal-body { min-width: 0; }
+    .legal-article {
+      margin-bottom: 56px;
+      padding-bottom: 56px;
+      border-bottom: 1px solid var(--gray-border);
+    }
+    .legal-article:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+    .legal-article-num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px; height: 32px;
+      background: var(--green);
+      color: var(--white);
+      font-size: 0.78rem;
+      font-weight: 700;
+      border-radius: 50%;
+      margin-bottom: 14px;
+    }
+    .legal-article h2 {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: var(--text);
+      letter-spacing: -0.02em;
+      margin-bottom: 18px;
+      line-height: 1.3;
+    }
+    .legal-article p {
+      font-size: 0.92rem;
+      color: var(--text-light);
+      line-height: 1.8;
+      margin-bottom: 12px;
+    }
+    .legal-article p:last-child { margin-bottom: 0; }
+    .legal-info-box {
+      background: var(--green-xlight);
+      border: 1px solid rgba(46,125,50,0.2);
+      border-radius: var(--radius-md);
+      padding: 20px 24px;
+      margin-top: 16px;
+    }
+    .legal-info-box p { margin-bottom: 8px; font-size: 0.88rem; }
+    .legal-info-box p:last-child { margin-bottom: 0; }
+    .legal-info-box strong { color: var(--green); font-weight: 700; }
+
+    /* RGPD rights grid */
+    .rights-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-top: 20px;
+    }
+    .right-card {
+      background: #F8FAF8;
+      border: 1.5px solid var(--gray-border);
+      border-radius: var(--radius-md);
+      padding: 18px 20px;
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      transition: var(--transition);
+    }
+    .right-card:hover { border-color: var(--green-light); background: var(--green-xlight); }
+    .right-card-icon {
+      width: 36px; height: 36px;
+      border-radius: var(--radius-sm);
+      background: var(--green-xlight);
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+      color: var(--green);
+    }
+    .right-card:hover .right-card-icon { background: var(--white); }
+    .right-card h4 { font-size: 0.88rem; font-weight: 700; color: var(--text); margin-bottom: 4px; }
+    .right-card p { font-size: 0.8rem; color: var(--gray); line-height: 1.5; margin: 0; }
+
+    /* Data table */
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 16px;
+      font-size: 0.88rem;
+    }
+    .data-table th {
+      background: var(--green);
+      color: var(--white);
+      padding: 12px 16px;
+      text-align: left;
+      font-weight: 600;
+      font-size: 0.8rem;
+    }
+    .data-table th:first-child { border-radius: var(--radius-sm) 0 0 0; }
+    .data-table th:last-child  { border-radius: 0 var(--radius-sm) 0 0; }
+    .data-table td {
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--gray-border);
+      color: var(--text-light);
+      line-height: 1.5;
+    }
+    .data-table tr:last-child td { border-bottom: none; }
+    .data-table tr:nth-child(even) td { background: #F8FAF8; }
+
+    .legal-cta {
+      background: linear-gradient(135deg, var(--green-xlight) 0%, rgba(255,255,255,0.8) 100%);
+      border: 1.5px solid rgba(46,125,50,0.15);
+      border-radius: var(--radius-lg);
+      padding: 40px 48px;
+      text-align: center;
+      margin-top: 60px;
+    }
+    .legal-cta h3 { font-size: 1.3rem; font-weight: 800; color: var(--text); margin-bottom: 10px; }
+    .legal-cta p { font-size: 0.92rem; color: var(--gray); margin-bottom: 24px; }
+
+    @media (max-width: 900px) {
+      .legal-grid { grid-template-columns: 1fr; }
+      .legal-nav { position: static; }
+      .rights-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 640px) {
+      .legal-hero { padding: 120px 0 60px; }
+      .legal-content { padding: 48px 0 64px; }
+      .legal-cta { padding: 28px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="header scrolled" id="header">
+    <div class="header-inner container">
+      <a href="index.html" class="logo-link">
+        <img src="images/yamenergynoir.png" alt="YAM ENERGY" class="logo-img" />
+      </a>
+      <nav class="nav-desktop" aria-label="Navigation principale">
+        <a href="index.html#accueil" class="nav-link">Accueil</a>
+        <a href="index.html#irve" class="nav-link">IRVE</a>
+        <a href="index.html#electricite" class="nav-link">Électricité générale</a>
+        <a href="index.html#entreprise" class="nav-link">Entreprise</a>
+        <a href="index.html#contact" class="nav-link">Contact</a>
+      </nav>
+      <a href="index.html#contact" class="btn btn-primary cta-header">Demander un devis</a>
+      <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-overlay" id="mobileOverlay"></div>
+  <nav class="mobile-menu" id="mobileMenu" aria-label="Menu mobile">
+    <button class="mobile-close" id="mobileClose" aria-label="Fermer le menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <a href="index.html#accueil" class="mobile-nav-link">Accueil</a>
+    <a href="index.html#irve" class="mobile-nav-link">IRVE</a>
+    <a href="index.html#electricite" class="mobile-nav-link">Électricité générale</a>
+    <a href="index.html#entreprise" class="mobile-nav-link">Entreprise</a>
+    <a href="index.html#contact" class="mobile-nav-link">Contact</a>
+    <a href="index.html#contact" class="btn btn-primary mobile-cta">Demander un devis</a>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="legal-hero">
+    <div class="container">
+      <div class="legal-hero-tag">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        RGPD & Confidentialité
+      </div>
+      <h1>Politique de Confidentialité</h1>
+      <p>Protection de vos données personnelles conformément au Règlement Général sur la Protection des Données (RGPD).</p>
+    </div>
+  </section>
+
+  <div class="breadcrumb">
+    <div class="container breadcrumb-inner">
+      <a href="index.html">Accueil</a>
+      <span class="breadcrumb-sep">›</span>
+      <span>Politique de confidentialité</span>
+    </div>
+  </div>
+
+  <!-- ========== CONTENU ========== -->
+  <section class="legal-content">
+    <div class="container">
+      <div class="legal-grid">
+
+        <!-- Sidebar -->
+        <aside class="legal-nav">
+          <p class="legal-nav-title">Sommaire</p>
+          <a href="#collecte">Données collectées</a>
+          <a href="#finalites">Finalités</a>
+          <a href="#droits">Vos droits</a>
+          <a href="#conservation">Conservation</a>
+          <a href="#tiers">Tiers & partage</a>
+          <a href="#cookies">Cookies</a>
+          <a href="#contact-rgpd">Nous contacter</a>
+        </aside>
+
+        <!-- Corps -->
+        <div class="legal-body">
+
+          <div class="legal-article" id="collecte">
+            <div class="legal-article-num">1</div>
+            <h2>Données collectées</h2>
+            <p>Dans le cadre de votre utilisation du site yamenergy.fr, YAM ENERGY est susceptible de collecter les données personnelles suivantes :</p>
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Donnée</th>
+                  <th>Source</th>
+                  <th>Obligatoire</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Nom et prénom</td>
+                  <td>Formulaire de contact</td>
+                  <td>Oui</td>
+                </tr>
+                <tr>
+                  <td>Adresse e-mail</td>
+                  <td>Formulaire de contact</td>
+                  <td>Oui</td>
+                </tr>
+                <tr>
+                  <td>Numéro de téléphone</td>
+                  <td>Formulaire de contact</td>
+                  <td>Non</td>
+                </tr>
+                <tr>
+                  <td>Type de projet</td>
+                  <td>Formulaire de contact</td>
+                  <td>Oui</td>
+                </tr>
+                <tr>
+                  <td>Message libre</td>
+                  <td>Formulaire de contact</td>
+                  <td>Oui</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="legal-article" id="finalites">
+            <div class="legal-article-num">2</div>
+            <h2>Finalités du traitement</h2>
+            <p>Les informations recueillies via le site YAM ENERGY sont utilisées exclusivement dans le cadre de la relation commerciale, afin de :</p>
+            <div class="legal-info-box">
+              <p>✅ Répondre à vos demandes de devis et d'informations</p>
+              <p>✅ Établir des propositions commerciales personnalisées</p>
+              <p>✅ Assurer le suivi de votre projet d'installation</p>
+              <p>✅ Améliorer la qualité de nos services</p>
+            </div>
+            <p style="margin-top:16px;">Ces données ne sont <strong style="color:var(--green)">ni vendues, ni cédées à des tiers</strong> à des fins commerciales ou publicitaires.</p>
+          </div>
+
+          <div class="legal-article" id="droits">
+            <div class="legal-article-num">3</div>
+            <h2>Vos droits RGPD</h2>
+            <p>Conformément au Règlement Général sur la Protection des Données (UE) 2016/679, vous disposez des droits suivants sur vos données personnelles :</p>
+            <div class="rights-grid">
+              <div class="right-card">
+                <div class="right-card-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                </div>
+                <div>
+                  <h4>Droit d'accès</h4>
+                  <p>Obtenir une copie des données vous concernant</p>
+                </div>
+              </div>
+              <div class="right-card">
+                <div class="right-card-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+                </div>
+                <div>
+                  <h4>Droit de rectification</h4>
+                  <p>Corriger vos données inexactes ou incomplètes</p>
+                </div>
+              </div>
+              <div class="right-card">
+                <div class="right-card-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2"/></svg>
+                </div>
+                <div>
+                  <h4>Droit à l'effacement</h4>
+                  <p>Demander la suppression de vos données</p>
+                </div>
+              </div>
+              <div class="right-card">
+                <div class="right-card-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+                </div>
+                <div>
+                  <h4>Droit à la portabilité</h4>
+                  <p>Recevoir vos données dans un format lisible</p>
+                </div>
+              </div>
+            </div>
+            <p style="margin-top:20px;">Pour exercer l'un de ces droits, contactez-nous à : <a href="mailto:contact.yamenergy@gmail.com" style="color:var(--green);font-weight:600;">contact.yamenergy@gmail.com</a></p>
+            <p>En cas de réclamation, vous pouvez également contacter la <strong>CNIL</strong> (Commission Nationale de l'Informatique et des Libertés) : <a href="https://www.cnil.fr" target="_blank" rel="noopener" style="color:var(--green);font-weight:600;">www.cnil.fr</a></p>
+          </div>
+
+          <div class="legal-article" id="conservation">
+            <div class="legal-article-num">4</div>
+            <h2>Durée de conservation</h2>
+            <p>Les données personnelles collectées via le formulaire de contact sont conservées <strong style="color:var(--text)">uniquement le temps nécessaire au traitement de votre demande</strong> et à la gestion de la relation commerciale qui pourrait en découler.</p>
+            <p>En l'absence de relation commerciale établie, les données sont supprimées dans un délai maximum de 3 ans à compter du dernier contact. Si une relation contractuelle est établie, les données sont conservées conformément aux obligations légales applicables (généralement 5 à 10 ans selon la nature des documents).</p>
+          </div>
+
+          <div class="legal-article" id="tiers">
+            <div class="legal-article-num">5</div>
+            <h2>Partage avec des tiers</h2>
+            <p>YAM ENERGY ne vend, ne loue et ne cède en aucun cas vos données personnelles à des tiers à des fins commerciales ou publicitaires.</p>
+            <p>Les données peuvent être transmises à des prestataires techniques strictement nécessaires au bon fonctionnement du service (ex : service d'envoi d'emails), dans le cadre de contrats de sous-traitance conformes au RGPD. Ces prestataires n'utilisent vos données qu'aux fins définies et sous notre supervision.</p>
+          </div>
+
+          <div class="legal-article" id="cookies">
+            <div class="legal-article-num">6</div>
+            <h2>Cookies</h2>
+            <p>Le site peut déposer des cookies sur votre terminal afin d'améliorer l'expérience utilisateur et d'analyser l'audience. Ces cookies sont strictement fonctionnels et ne collectent aucune donnée personnelle identifiable.</p>
+            <div class="legal-info-box">
+              <p><strong>Cookies fonctionnels :</strong> nécessaires au bon fonctionnement du site (navigation, mémorisation des préférences).</p>
+              <p><strong>Cookies analytiques :</strong> permettent d'analyser anonymement le trafic et d'améliorer les performances du site.</p>
+            </div>
+            <p style="margin-top:16px;">Vous pouvez à tout moment configurer ou désactiver les cookies via les paramètres de votre navigateur. La désactivation des cookies fonctionnels pourrait affecter certaines fonctionnalités du site.</p>
+          </div>
+
+          <div class="legal-article" id="contact-rgpd">
+            <div class="legal-article-num">7</div>
+            <h2>Nous contacter</h2>
+            <p>Pour toute question relative à cette politique de confidentialité ou pour exercer vos droits, contactez le responsable de traitement :</p>
+            <div class="legal-info-box">
+              <p><strong>Responsable :</strong> YAM ENERGY – Abderrahmane El Mhamedi El Alaoui</p>
+              <p><strong>Email :</strong> contact.yamenergy@gmail.com</p>
+              <p><strong>Adresse :</strong> 6 rue des Bateliers, Bureau 3, 92110 Clichy, France</p>
+            </div>
+          </div>
+
+          <!-- CTA -->
+          <div class="legal-cta">
+            <h3>Une question sur vos données ?</h3>
+            <p>Notre équipe est disponible pour répondre à toutes vos questions relatives à vos données personnelles.</p>
+            <a href="mailto:contact.yamenergy@gmail.com" class="btn btn-primary btn-lg">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              contact.yamenergy@gmail.com
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="images/yamenergyblanc.png" alt="YAM ENERGY" class="footer-logo" />
+        <p class="footer-desc">Spécialiste en installation de bornes de recharge IRVE et électricité générale pour particuliers, copropriétés et entreprises.</p>
+        <div class="footer-certifs">
+          <img src="images/irve.png" alt="IRVE" class="footer-certif-img" />
+          <img src="images/qualifelec.png" alt="Qualifelec" class="footer-certif-img" />
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-heading">Navigation</h4>
+        <nav>
+          <a href="index.html#accueil" class="footer-link">Accueil</a>
+          <a href="index.html#irve" class="footer-link">IRVE</a>
+          <a href="index.html#electricite" class="footer-link">Électricité générale</a>
+          <a href="index.html#entreprise" class="footer-link">Entreprise</a>
+          <a href="index.html#contact" class="footer-link">Contact</a>
+        </nav>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-heading">Légal</h4>
+        <nav>
+          <a href="mentions-legales.html" class="footer-link">Mentions légales</a>
+          <a href="politique-confidentialite.html" class="footer-link" style="color:rgba(255,255,255,0.9);">Politique de confidentialité</a>
+          <a href="cgv.html" class="footer-link">CGV</a>
+        </nav>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-heading">Coordonnées</h4>
+        <a href="mailto:contact.yamenergy@gmail.com" class="footer-link footer-contact-link">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          contact.yamenergy@gmail.com
+        </a>
+        <a href="tel:0184804587" class="footer-link footer-contact-link">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13 19.79 19.79 0 0 1 1.59 4.4 2 2 0 0 1 3.56 2.18h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6 6l.9-.9a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.73 17z"/></svg>
+          01 84 80 45 87
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 YAM ENERGY – Tous droits réservés &nbsp;·&nbsp; <a href="mentions-legales.html" style="color:rgba(255,255,255,0.5);">Mentions légales</a> &nbsp;·&nbsp; <a href="politique-confidentialite.html" style="color:rgba(255,255,255,0.5);">Confidentialité</a> &nbsp;·&nbsp; <a href="cgv.html" style="color:rgba(255,255,255,0.5);">CGV</a></p>
+    </div>
+  </footer>
+
+  <script>
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => { header.classList.toggle('scrolled', window.scrollY > 10); }, { passive: true });
+    const burger = document.getElementById('burger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mobileOverlay = document.getElementById('mobileOverlay');
+    const mobileClose = document.getElementById('mobileClose');
+    const openMenu = () => { burger.classList.add('open'); mobileMenu.classList.add('open'); mobileOverlay.classList.add('active'); document.body.style.overflow = 'hidden'; };
+    const closeMenu = () => { burger.classList.remove('open'); mobileMenu.classList.remove('open'); mobileOverlay.classList.remove('active'); document.body.style.overflow = ''; };
+    burger.addEventListener('click', openMenu);
+    mobileClose.addEventListener('click', closeMenu);
+    mobileOverlay.addEventListener('click', closeMenu);
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeMenu(); });
+    const articles = document.querySelectorAll('.legal-article');
+    const navLinks = document.querySelectorAll('.legal-nav a');
+    window.addEventListener('scroll', () => {
+      let current = '';
+      articles.forEach(a => { if (window.scrollY >= a.offsetTop - 140) current = a.id; });
+      navLinks.forEach(l => { l.classList.toggle('active', l.getAttribute('href') === '#' + current); });
+    }, { passive: true });
+  </script>
+</body>
+</html>
